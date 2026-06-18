@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Synergy Prep — Redirecting…</title>
+<script>
+  // GitHub Pages serves this for any unknown path. The app uses hash routing,
+  // so bridge path-style URLs (…/shsat) to their hash routes (…/#shsat).
+  // Works at domain root AND under a /repo-name/ subpath.
+  (function () {
+    var KNOWN = ['programs-hub','shsat','sat','college','about','tutors',
+                 'results','resources','consultation'];
+    var parts = window.location.pathname.split('/').filter(Boolean);
+    var last  = parts[parts.length - 1] || '';
+    // Base = everything before the last segment (keeps /repo-name/ prefix)
+    var base  = '/' + parts.slice(0, -1).join('/');
+    if (base !== '/') base += '/';
+    var target = KNOWN.indexOf(last) !== -1 ? base + '#' + last : base || '/';
+    window.location.replace(target);
+  })();
+</script>
+</head>
+<body>
+  <p>Redirecting… <a href="/">Go to Synergy Prep</a></p>
+</body>
+</html>

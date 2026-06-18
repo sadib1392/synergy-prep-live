@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <g id="f">
+      <circle cx="60" cy="20" r="6.5" fill="#1FA8E0"/>
+      <path d="M60 27 L52 58 L68 58 Z" fill="#26BCF7"/>
+      <path d="M53 30 L34 22 L40 33 L56 38 Z" fill="#26BCF7"/>
+      <path d="M67 30 L86 22 L80 33 L64 38 Z" fill="#26BCF7"/>
+    </g>
+  </defs>
+  <use href="#f"/>
+  <use href="#f" transform="rotate(90 60 60)"/>
+  <use href="#f" transform="rotate(180 60 60)"/>
+  <use href="#f" transform="rotate(270 60 60)"/>
+  <polygon points="60,53 67,60 60,67 53,60" fill="#25408F"/>
+</svg>
